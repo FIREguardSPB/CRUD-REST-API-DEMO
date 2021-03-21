@@ -1,0 +1,64 @@
+.crudblock_container{
+    margin-top: 10px;
+    border-top: 1px solid green;
+    padding-top: 10px;
+
+}
+.get_posts{
+    margin-top: 10px;
+    border: 1px solid green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+
+}
+.get_posts:hover{
+    background-color: lightgreen;
+    color:blue;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.04);
+}
+.create_post{
+    margin-top: 10px;
+    border: 1px solid green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.create_post:hover {
+    background-color: lightgreen;
+    color:blue;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.04);
+
+}
+.delete_post{
+    margin-top: 10px;
+    border: 1px solid green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.delete_post:hover{
+    background-color: lightgreen;
+    color:blue;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.04);
+}
+.edit_post{
+    margin-top: 10px;
+    border: 1px solid green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.edit_post:hover{
+    background-color: lightgreen;
+    color:blue;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.04);
+}

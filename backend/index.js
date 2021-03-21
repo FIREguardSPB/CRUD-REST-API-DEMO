@@ -14,7 +14,7 @@ app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({extended: false}))
 const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, '..', 'project','build')))
+app.use(express.static(path.join(__dirname, '..', 'build')))
 
 // app.get('/', function (req, res) {
 //     res.sendFile(path.join(__dirname, 'build', 'index.html'));

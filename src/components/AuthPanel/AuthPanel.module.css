@@ -1,0 +1,16 @@
+.container{
+    margin: 0 auto;
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 50vh;
+    border: 2px solid green;
+    box-shadow: 10px 10px 10px black ;
+    border-radius: 15px;
+}
+.auth_panel{
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+}
+.auth__block{
+    margin-top: 10px;
+}

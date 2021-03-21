@@ -1,0 +1,19 @@
+.delete_post_form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background: black;
+}
+.id_input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: lightgray;
+}
+.submit_btn{
+    border: 1px solid green;
+    width: 15%;
+}
+.submit_btn:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}

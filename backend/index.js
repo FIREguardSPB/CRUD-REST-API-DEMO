@@ -6,7 +6,7 @@ import authRouter from "./route/authRoutes.js"
 import path from 'path'
 import dotEnv from "dotenv"
 import cors from "cors"
-import fetch from 'fetch'
+import fetch from 'node-fetch'
 dotEnv.config()
 const app = express();
 const DB_URL = `mongodb+srv://${process.env.DB_LOGIN}:${process.env.DB_PASS}@cluster0.ml5bu.mongodb.net/myBase?retryWrites=true&w=majority`

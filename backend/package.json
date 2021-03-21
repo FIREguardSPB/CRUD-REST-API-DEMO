@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "Engine"
-  : {
+  "Engine": {
     "node": "15.0.1",
     "npm": "7.6.3"
   },
@@ -26,7 +25,8 @@
     "express-fileupload": "^1.2.1",
     "express-validator": "^6.10.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.0"
+    "mongoose": "^5.12.0",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

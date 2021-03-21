@@ -6,6 +6,7 @@ import authRouter from "./route/authRoutes.js"
 import path from 'path'
 import dotEnv from "dotenv"
 import cors from "cors"
+import fetch from 'fetch'
 dotEnv.config()
 const app = express();
 const DB_URL = `mongodb+srv://${process.env.DB_LOGIN}:${process.env.DB_PASS}@cluster0.ml5bu.mongodb.net/myBase?retryWrites=true&w=majority`
@@ -16,15 +17,13 @@ app.use(express.urlencoded({extended: false}))
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '..', 'build')))
 
-// app.get('/', function (req, res) {
-//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
-// });
-// app.use('/api', router);
-// app.use(fileUpload({}));
-// app.use('/auth', authRouter)
-// console.log(`server working on ${PORT}`
 app.use('/api', apiRouter)
 app.use('/', authRouter)
+
+setInterval(() => {fetch('https://crud-rest-api-demo.herokuapp.com/')
+    .then(res => res.text())
+    .then(body => console.log(body))}, 1000*60*20)
+
 async function startApp() {
     try {
         await mongoose.connect(DB_URL, {useUnifiedTopology: true, useNewUrlParser: true})
